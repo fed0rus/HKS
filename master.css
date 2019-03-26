@@ -1,6 +1,18 @@
-body {
-    background-color: #282828;
+@font-face {
+  font-family: 'Perpetua';
+  src: url('./font/Perpetua.eot?#iefix') format('embedded-opentype'),
+  url('./font/Perpetua.woff') format('woff'),
+  url('./font/Perpetua.ttf')  format('truetype'),
+  url('./font/Perpetua.svg#Perpetua') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
+body {
+    font-size: 22px;
+    font-family: "Perpetua";
+    background-image: url("./images/background.png");
+    background-size: cover;
 }
 
 .logo {
@@ -12,36 +24,43 @@ div.logo img {
 }
 
 div.logo {
-    background: url("./images/background-logo.jpg") no-repeat;
-    background-size: cover;
     padding: 15px;
     padding-bottom: 5px;
     width: 50%;
     margin: auto;
     margin-top: 18px;
     margin-bottom: 40px;
-    border-radius: 40px;
-    border: 2px solid #ffffff;
-    box-shadow: 5px 5px rgba(10, 10, 10, 0.1);
-}
-
-div.menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
 }
 
 div.menu-box {
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: auto;
+    margin-right: 10%;
+    width: 20%;
     text-align: center;
-    padding: 15px 40px 15px 40px;
-    color: white;
-    background-color: #5e5e5e;
-    border: 3px solid #ededed;
+    /* padding: 15px 40px 15px 40px; */
+}
 
-    border-radius: 30px;
+.shadowfilter {
+    -webkit-filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.7));
+    filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.7));
+}
+
+div.glow {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff;
+    }
+    to {
+        text-shadow: 0 0 2.5px #bbf, 0 0 2.5px #bbf, 0 0 2.5px #bbf, 0 0 2.5px #bbf, 0 0 2.5px #bbf, 0 0 2.5px #bbf, 0 0 2.5px #bbf;
+    }
 }
 
 .characters {
@@ -54,4 +73,8 @@ div.menu-box {
 
 .artwork {
 
+}
+
+.footer-break {
+    clear: both;
 }
