@@ -11,7 +11,7 @@
 body {
     font-size: 22px;
     font-family: "Perpetua";
-    background-image: url("./images/background.png");
+    background: url("./images/background.png") no-repeat;
     background-size: cover;
 }
 
@@ -26,44 +26,26 @@ div.logo img {
 div.logo {
     padding: 15px;
     padding-bottom: 5px;
-    width: 50%;
+    width: 40%;
     margin: auto;
     margin-top: 18px;
-    margin-bottom: 40px;
-<<<<<<< HEAD
-}
-
-div.menu-box {
-    margin-left: auto;
-    margin-right: 10%;
-    width: 20%;
-    text-align: center;
-    /* padding: 15px 40px 15px 40px; */
-}
-
-.shadowfilter {
-    -webkit-filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.7));
-    filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.7));
-}
-
-=======
+    margin-bottom: 0px;
 }
 
 div.menu {
+    margin-right: 4%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width: 25%;
+    float: right;
 }
 
 div.menu-box {
     width: 100%;
-    margin-left: 4%;
-    margin-right: 4%;
+    margin: 4%;
     text-align: center;
-    padding: 15px 40px 15px 40px;
-    border: 1px solid white;
-    border-radius: 45px;
+    padding: 15px 0px 15px 0px;
 }
 
 .shadowfilter {
@@ -71,7 +53,6 @@ div.menu-box {
     filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.7));
 }
 
->>>>>>> 9b60a1963cf0f46d56e90ab93b953793ae68f604
 div.glow {
   font-size: 40px;
   color: #fff;
@@ -81,26 +62,29 @@ div.glow {
   animation: glow 1s ease-in-out infinite alternate;
 }
 
+div.glow:hover {
+    -webkit-animation: glow-hover ease-in-out infinite alternate;
+    -moz-animation: glow-hover 1s ease-in-out infinite alternate;
+    animation: glow-hover 1s ease-in-out infinite alternate;
+}
+
+
 @-webkit-keyframes glow {
     from {
         text-shadow: 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff;
-<<<<<<< HEAD
     }
     to {
         text-shadow: 0 0 2.5px #bbf, 0 0 2.5px #bbf, 0 0 2.5px #bbf, 0 0 2.5px #bbf, 0 0 2.5px #bbf, 0 0 2.5px #bbf, 0 0 2.5px #bbf;
-    }
-=======
-        box-shadow: 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff;
-    }
-    to {
-        text-shadow: 0 0 2.5px #bbf, 0 0 2.5px #bbf, 0 0 2.5px #bbf, 0 0 2.5px #bbf, 0 0 2.5px #bbf, 0 0 2.5px #bbf, 0 0 2.5px #bbf;
-        box-shadow: 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff;
     }
 }
 
-div.menu-box:hover {
-    background-color: #5e5e5e;
->>>>>>> 9b60a1963cf0f46d56e90ab93b953793ae68f604
+@-webkit-keyframes glow-hover {
+    from {
+        text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
+    }
+    to {
+        text-shadow: 0 0 3px #bbf, 0 0 3px #bbf, 0 0 3px #bbf, 0 0 3px #bbf, 0 0 3px #bbf, 0 0 3px #bbf, 0 0 3px #bbf;
+    }
 }
 
 .characters {
@@ -117,4 +101,11 @@ div.menu-box:hover {
 
 .footer-break {
     clear: both;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: inherit;
 }
