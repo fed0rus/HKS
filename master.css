@@ -30,6 +30,7 @@ div.logo {
     margin: auto;
     margin-top: 18px;
     margin-bottom: 40px;
+<<<<<<< HEAD
 }
 
 div.menu-box {
@@ -45,6 +46,32 @@ div.menu-box {
     filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.7));
 }
 
+=======
+}
+
+div.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+div.menu-box {
+    width: 100%;
+    margin-left: 4%;
+    margin-right: 4%;
+    text-align: center;
+    padding: 15px 40px 15px 40px;
+    border: 1px solid white;
+    border-radius: 45px;
+}
+
+.shadowfilter {
+    -webkit-filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.7));
+    filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.7));
+}
+
+>>>>>>> 9b60a1963cf0f46d56e90ab93b953793ae68f604
 div.glow {
   font-size: 40px;
   color: #fff;
@@ -57,10 +84,23 @@ div.glow {
 @-webkit-keyframes glow {
     from {
         text-shadow: 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff;
+<<<<<<< HEAD
     }
     to {
         text-shadow: 0 0 2.5px #bbf, 0 0 2.5px #bbf, 0 0 2.5px #bbf, 0 0 2.5px #bbf, 0 0 2.5px #bbf, 0 0 2.5px #bbf, 0 0 2.5px #bbf;
     }
+=======
+        box-shadow: 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff;
+    }
+    to {
+        text-shadow: 0 0 2.5px #bbf, 0 0 2.5px #bbf, 0 0 2.5px #bbf, 0 0 2.5px #bbf, 0 0 2.5px #bbf, 0 0 2.5px #bbf, 0 0 2.5px #bbf;
+        box-shadow: 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff;
+    }
+}
+
+div.menu-box:hover {
+    background-color: #5e5e5e;
+>>>>>>> 9b60a1963cf0f46d56e90ab93b953793ae68f604
 }
 
 .characters {
