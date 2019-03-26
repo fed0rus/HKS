@@ -25,7 +25,7 @@ div.logo img {
 
 div.logo {
     padding: 15px;
-    padding-bottom: 5px;
+    padding-bottom: 0px;
     width: 40%;
     margin: auto;
     margin-top: 18px;
@@ -43,7 +43,7 @@ div.menu {
 
 div.menu-box {
     width: 100%;
-    margin: 4%;
+    margin: 3%;
     text-align: center;
     padding: 15px 0px 15px 0px;
 }
@@ -85,18 +85,6 @@ div.glow:hover {
     to {
         text-shadow: 0 0 3px #bbf, 0 0 3px #bbf, 0 0 3px #bbf, 0 0 3px #bbf, 0 0 3px #bbf, 0 0 3px #bbf, 0 0 3px #bbf;
     }
-}
-
-.characters {
-
-}
-
-.history {
-
-}
-
-.artwork {
-
 }
 
 .footer-break {
