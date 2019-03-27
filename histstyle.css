@@ -71,6 +71,11 @@ div.description > p {
 div.description > img {
     height: 70%;
     width: 70%;
+    transition-property: width;
+}
+
+img:hover {
+    width: 20%;
 }
 
 img.left {
