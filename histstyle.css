@@ -71,10 +71,6 @@ div.label {
     align-items: center;
 }
 
-div.passage:nth-child(3) > :nth-child(1, 2) {
-    flex-direction: column;
-}
-
 div.description > img {
     height: 70%;
     width: 70%;
