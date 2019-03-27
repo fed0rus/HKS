@@ -8,7 +8,16 @@
   font-style: normal;
 }
 
+@-webkit-keyframes fade-in {   0% { opacity: 0; }   100% { opacity: 1; }   }
+@-moz-keyframes    fade-in {   0% { opacity: 0; }   100% { opacity: 1; }   }
+@-o-keyframes      fade-in {   0% { opacity: 0; }   100% { opacity: 1; }   }
+@keyframes         fade-in {   0% { opacity: 0; }   100% { opacity: 1; }   }
+
 body {
+    -webkit-animation: fade-in 3s linear; /* Safari 4+ */
+    -moz-animation: fade-in 3s linear; /* Fx 5+ */
+    -o-animation: fade-in 3s linear; /* Opera 12+ */
+    animation: fade-in 3s linear; /* IE 10+, Fx 29+ */
     font-size: 22px;
     font-family: "Perpetua";
     background: url("./images/background.png");
