@@ -113,6 +113,8 @@ div.description > p {
 }
 
 div.map {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -146,25 +148,48 @@ a:active {
 div.character-grid {
     width: 100%;
     height: auto;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     flex-basis: auto;
     flex-grow: 0;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
 div.character-grid > div.character {
-    text-align: center;
-    vertical-align: middle;
-    overflow: hidden;
-    width: 30%;
-    height: 30%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden
     border: 2px solid white;
 }
 
 .character > img {
+    align-self: center;
     max-width: 100%;
     max-height: 100%;
+}
+
+.character > p.heading {
+    margin: 15px;
+    margin-bottom: 0px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.character > p.text {
+    margin: 10px;
+    margin-top: 6px;
+    font-size: 30px;
+    text-align: center;
 }
