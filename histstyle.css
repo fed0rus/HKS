@@ -26,6 +26,15 @@
     }
 }
 
+@-webkit-keyframes box-glow {
+    from {
+        box-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff;
+    }
+    to {
+        box-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff;
+    }
+}
+
 body {
     font-family: "Perpetua", "Consolas";
     background: linear-gradient(to bottom, #000000, #0b0b1f);
@@ -62,6 +71,10 @@ div.label {
     align-items: center;
 }
 
+div.passage:nth-child(3) > :nth-child(1, 2) {
+    flex-direction: column;
+}
+
 div.description > img {
     height: 70%;
     width: 70%;
@@ -71,7 +84,6 @@ div.description > p {
     font-size: 32px;
     text-align: center;
     margin: 30px;
-    margin-top: 50px;
     padding: 20px;
 }
 
@@ -98,6 +110,15 @@ div.map > img {
     height: 80%;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 90px;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 86%;
+    text-align: center;
+    border: 1.5px solid white;
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.7);
 }
 
 a:link,
