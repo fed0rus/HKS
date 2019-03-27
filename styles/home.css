@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'Perpetua';
-  src: url('./font/Perpetua.eot?#iefix') format('embedded-opentype'),
-  url('./font/Perpetua.woff') format('woff'),
-  url('./font/Perpetua.ttf')  format('truetype'),
-  url('./font/Perpetua.svg#Perpetua') format('svg');
+  src: url('../font/Perpetua.eot?#iefix') format('embedded-opentype'),
+  url('../font/Perpetua.woff') format('woff'),
+  url('../font/Perpetua.ttf')  format('truetype'),
+  url('../font/Perpetua.svg#Perpetua') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,13 +14,13 @@
 @keyframes         fade-in {   0% { opacity: 0; }   100% { opacity: 1; }   }
 
 body {
-    -webkit-animation: fade-in 3s linear; /* Safari 4+ */
-    -moz-animation: fade-in 3s linear; /* Fx 5+ */
-    -o-animation: fade-in 3s linear; /* Opera 12+ */
-    animation: fade-in 3s linear; /* IE 10+, Fx 29+ */
+    -webkit-animation: fade-in 2s linear; /* Safari 4+ */
+    -moz-animation: fade-in 2s linear; /* Fx 5+ */
+    -o-animation: fade-in 2s linear; /* Opera 12+ */
+    animation: fade-in 2s linear; /* IE 10+, Fx 29+ */
     font-size: 22px;
     font-family: "Perpetua";
-    background: url("./images/background.png");
+    background: url("../images/background.png");
     background-size: cover;
 }
 
