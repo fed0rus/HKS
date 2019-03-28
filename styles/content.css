@@ -45,7 +45,7 @@ body {
     -moz-animation: fade-in 2s linear; /* Fx 5+ */
     -o-animation: fade-in 2s linear; /* Opera 12+ */
     animation: fade-in 2s linear; /* IE 10+, Fx 29+ */
-    font-family: "Perpetua", "Consolas";
+    font-family: "Perpetua", "Times New Roman";
     background: linear-gradient(to bottom, #000000, #0b0b1f);
     height: 100%;
     margin: 0;
@@ -157,7 +157,7 @@ div.character-grid {
     align-items: center;
 }
 
-div.character-grid > div.character {
+div.character {
     display: -webkit-flex;
     display: -ms-flexbox;
     -webkit-flex-wrap: wrap;
@@ -166,8 +166,7 @@ div.character-grid > div.character {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    overflow: hidden
-    border: 2px solid white;
+    overflow: hidden;
 }
 
 .character > img {
